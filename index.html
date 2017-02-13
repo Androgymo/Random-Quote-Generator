@@ -7,22 +7,24 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
      <link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
     <title>Random Quote Generator</title>
-
   </head>
 
   <body>
-    <h1>Quotes from Hamilton, The Musical
-    </h1>
+    <h1>Quotes from Hamilton, The Musical</h1>
     <button onclick="newQuote">New Quote</button>
     <div id="quote">
       <script>
-      $('#quote').html(randomQuote)
-      function updateQuote() {
-        document.getElementById('quote').innerHTML = console.log(randomQuote);
-      }
-      $('#newQuote').click(updateQuote) {
-        location.reload;
-      }
+        $('#quote').html(randomQuote)
+
+        function updateQuote() {
+            document.getElementById('quote').innerHTML = console.log(randomQuote);
+      };
+
+      $('button').click(updateQuote) {
+        location.reload();
+      };
+
+
       </script>
 
 
