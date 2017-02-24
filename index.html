@@ -11,23 +11,29 @@
 
   <body>
     <h1>Quotes from Hamilton, The Musical</h1>
-    <button onclick="newQuote">New Quote</button>
-    <div id="quote">
-      <script>
+    <div id="box">
+      <span id="quote">
+        <script>
+        $(document).ready(function (){
+          var randomQuote = quote[Math.floor(Math.random() * quote.length)];
         $('#quote').html(randomQuote)
-
         function updateQuote() {
-            document.getElementById('quote').innerHTML = console.log(randomQuote);
-      };
-
-      $('button').click(updateQuote) {
-        location.reload();
-      };
-
-
+            return quote[Math.floor(Math.random() * quote.length)]
+        };
+        //Show the next quote when clicking the button
+        $("button").click(function(){
+          $("#quote").html(quote[Math.floor(Math.random() * quote.length)]);
+          $("#quote").fadeOut("slow").fadeIn("slow");
+        });
+        // Changing the background color
+        var color = Math.floor(Math.random() * colors.length);
+        $("body").css({
+          backgroundColor: colors[color]
+        }, 1000);
+      });
       </script>
-
-
+    </span>
+      <button id="newQuote" onclick="newQuote">New Quote</button>
     </div>
 
 

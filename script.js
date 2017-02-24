@@ -1,3 +1,4 @@
+
 var quote = new Array();
 quote[0] = "\“There would have been nothin’ left to do for someone less astute. He would’ve been dead or destitute without a cent of restitution. Started workin’, clerkin’ for his late mother’s landlord, tradin’ sugarcane and rum and all the things he can’t afford. Scammin’ for every book he can get his hands on, plannin’ for the future. See him now as he stands on the bow of a ship headed for a new land. In New York you can be a new man.\” —Aaron Burr, \“Alexander Hamilton\” ";
 quote[1] = "\“I’m just like my country—I’m young, scrappy, and hungry, and I am not throwing away my shot.\” —Hamilton, \“My Shot\”";
@@ -13,7 +14,5 @@ quote[10] = "\"How does a ragtag volunteer army in need of a shower somehow defe
 quote[11] = "\"I know that we can win, I know that greatness lies in you. But remember from here on in, history has its eyes on you.\” —Washington, \“History Has Its Eyes on You\”"
 quote[12] = "\"We’re finally on the field, we’ve had quite a run. Immigrants: we get the job done.\” —Hamilton and Lafayette, \“Yorktown\”";
 
-
-var randomQuote = quote[Math.floor(Math.random() * quote.length)];
-
-console.log(randomQuote);
+var colors = ["#0abab5","#76ceca","#fcffff","#fccff", "#f9b9b6"]
+var color = Math.floor(Math.random() * colors.length);

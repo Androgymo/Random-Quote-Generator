@@ -1,7 +1,6 @@
 body {
-  background-color:#c2c6b3;
   font-family: Arsenal;
-  color: 21360d;
+  color: #21360d;
 }
 
 h1 {
@@ -15,9 +14,9 @@ div {
   }
 
   button {
-    background-color:#d0b712;
+    background-color:#C0C0C0;
     color:#21360d;
-    border-color:#d0b712;
+    border-color:#C0C0C0;
     border-radius: 5px;
     border:none;
     width: 100px;
